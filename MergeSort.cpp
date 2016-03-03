@@ -4,13 +4,13 @@ void merge(long long int a[],long long int l,long long int m,long long int r)
 {
 	long long int n1,n2,i,j,k;
 	n1=m+1-l;
-	n2=r-m;
+	n2=r-m;							//be careful with this
 	long long int a1[n1], a2[n2];
 	for(i=0;i<n1;i++)
-		a1[i]=a[l+i];
+		a1[i]=a[l+i];	
 	for(i=0;i<n2;i++)
-		a2[i]=a[m+1+i];
-	i=0,j=0,k=l;
+		a2[i]=a[m+1+i];					//BE CAREFUL WITH THIS AS WELL
+	i=0,j=0,k=l;						//Rememnber them
 	while(i<n1 && j<n2)
 	{
 		if(a1[i]<=a2[j])
